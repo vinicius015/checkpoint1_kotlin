@@ -1,7 +1,7 @@
 /**
- * Arquivo XML de layout representando um ConstraintLayout para exibir informações sobre um grupo.
+ * Arquivo XML de layout representando um ConstraintLayout que será o responsável por exibir informações sobre um grupo que será posteriormente apresentado no app.
  *
- * Este layout consiste em elementos TextView para exibir o nome do grupo, a lista de alunos
+ * Este layout consiste basicamente de elementos presentes em um TextView para exibir o nome do grupo já definido, o mesmo contendo uma lista de alunos
  * e seus respectivos IDs.
  *
  */

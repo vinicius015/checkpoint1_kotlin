@@ -1,7 +1,7 @@
 /**
- * Arquivo XML de layout representando um ConstraintLayout que contém um RecyclerView.
+ * Arquivo XML contendo o layout representando o ConstraintLayout que por sua vez contém um RecyclerView.
  * 
- * Este layout é usado para exibir uma lista de itens em um RecyclerView.
+ * Este layout é o responsável por exibir uma lista de itens provenientes de um RecyclerView.
  * 
  */
 
