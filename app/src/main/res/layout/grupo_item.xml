@@ -1,9 +1,20 @@
+/**
+ * Arquivo XML de layout representando um ConstraintLayout para exibir informações sobre um grupo.
+ *
+ * Este layout consiste em elementos TextView para exibir o nome do grupo, a lista de alunos
+ * e seus respectivos IDs.
+ *
+ */
+
+
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- TextView para exibir o nome do grupo -->
 
     <TextView
         android:id="@+id/nome"
@@ -16,6 +27,8 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Grupo 1" />
 
+    <!-- TextView para exibir o nome do grupo -->
+
     <TextView
         android:id="@+id/alunos"
         android:layout_width="0dp"
@@ -26,6 +39,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/nome"
         tools:text="Gabriel, Dayane, Vinicios e Vinicius" />
+
+    <!-- TextView para exibir o nome do grupo -->
 
     <TextView
         android:id="@+id/rms"
