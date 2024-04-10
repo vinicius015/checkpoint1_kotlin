@@ -1,3 +1,10 @@
+/**
+ * Arquivo XML de layout representando um ConstraintLayout que contém um RecyclerView.
+ * 
+ * Este layout é usado para exibir uma lista de itens em um RecyclerView.
+ * 
+ */
+
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -5,6 +12,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- RecyclerView para exibir a lista de itens -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="0dp"
