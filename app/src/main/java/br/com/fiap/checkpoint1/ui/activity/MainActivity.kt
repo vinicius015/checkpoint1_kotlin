@@ -10,16 +10,16 @@ import br.com.fiap.checkpoint1.ui.recyclerview.adapter.ListaGruposAdapter
 class MainActivity : Activity() {
 
     /**
-     * Classe principal da aplicação que está encarregada de msotrar a lista de grupos
+     * A classe Activity será a responsável por fazer a apresentação dos grupos que serão listados dentro da tela principal do nosso aplicativo
      */
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
         /**
-         * Método que é chamado sempre que a activity é criada. Ele é o responsável por configurar o layout
-         * e o adaptador para o RecyclerView.
+         * O Método em questão será sempre chamada a partir do momento em que a activity é criada. Ele é o responsável por fazer a configuração do layout
+         * e será aquele que fará o "meio campo" para que possamos utilizar o RecyclerView.
          *
-         * @param savedInstanceState Um objeto da classe Bundle que tem o estado da activity, se ele existir.
+         * @param savedInstanceState é um objeto da classe Bundle que tem o estado em que está a activity, se ele já tiver sido criado previamente.
          */
 
         super.onCreate(savedInstanceState)
@@ -35,7 +35,7 @@ class MainActivity : Activity() {
                 Grupo("Grupo 3", "Maria, João, José e Marta", "10101, 20202, 30303, 40404"),
             )
         )
-        // Pode ser configurado no layout
+        // A linha a seguir pode ser configurado tambem no layout
 //        recyclerView.layoutManager = LinearLayoutManager(this)
     }
 }

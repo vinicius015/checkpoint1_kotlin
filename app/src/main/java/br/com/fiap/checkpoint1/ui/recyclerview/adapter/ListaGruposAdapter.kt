@@ -10,10 +10,10 @@ import br.com.fiap.checkpoint1.R
 import br.com.fiap.checkpoint1.model.Grupo
 
 /**
- * Adaptador para exibir uma lista de grupos em um RecyclerView.
+ * Adaptador que será utilizado posteriormente exibir uma lista de grupos em um RecyclerView.
  *
- * @property context O contexto do app.
- * @property grupos A lista com os grupos que vão ser mostrados.
+ * @property context A função será a responsável por fazer contexto do app.
+ * @property grupos A lista com os grupos que foram previamente definidos e que serão exibidos posteriormente.
  */
 class ListaGruposAdapter(
     private val context: Context,
@@ -28,9 +28,9 @@ class ListaGruposAdapter(
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
         /**
-         * Método para ligar os dados de um grupo com a view.
+         * Método que será o responsável por ligar os dados de um grupo com a view.
          *
-         * @param grupo O grupo que vai ser mostrado.
+         * @param grupo Esse será o grupo que será exibido na tela do nosso aplicativo.
          */
         fun vincula(grupo: Grupo) {
             val nome = itemView.findViewById<TextView>(R.id.nome)
@@ -45,11 +45,11 @@ class ListaGruposAdapter(
     }
 
     /**
-     * Método para quando a RecyclerView necessitar de mais um ViewHolder pra mostrar um item da lista de grupos.
+     * Método para quando a RecyclerView mostrar que necessita de um ou mais ViewHolder pra mostrar o item da lista de grupos.
      *
-     * @param parent O ViewGroup onde o ViewHolder vai ser colocado depois de ter sido criado.
-     * @param viewType O tipo de view do ViewHolder novo.
-     * @return Um ViewHolder novo com a view do item.
+     * @param parent O ViewGroup onde o ViewHolder em questâo vai ser inserido depois de ter sido criado.
+     * @param viewType O tipo da nova ViewHolder que estará no aplicativo.
+     * @return Um novo ViewHolder que contará com a view do item.
      */
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -61,17 +61,17 @@ class ListaGruposAdapter(
     }
 
     /**
-     * Método que retorna o total de grupos na lista.
+     * Método que irá retornar o total de grupos presentes na lista.
      *
      * @return O número total de grupos.
      */
     override fun getItemCount(): Int = grupos.size
 
     /**
-     * Método chamado pelo RecyclerView para mostrar os grupos em uma determinada posição.
+     * Método chamado pelo RecyclerView que irá mostrar os grupos em sua respectiva posição.
      *
-     * @param holder O ViewHolder que vai ter os dados vinculados.
-     * @param position A posição do item na lista.
+     * @param holder O ViewHolder que será responsável por ter os dados vinculados.
+     * @param position A posição que o item ocupa na lista.
      */
     override fun onBindViewHolder(holder: ListaGruposAdapter.ViewHolder, position: Int) {
         val grupo = grupos[position]
